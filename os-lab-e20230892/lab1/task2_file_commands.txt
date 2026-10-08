@@ -1,0 +1,13 @@
+/home/gic-piseth-panhavorn/oslab-work/lab1/task2_files
+lemon.txt
+silver.txt
+This is file silver
+This is file lemon
+lemon.txt
+silver.txt
+silver_copy.txt
+lemon_renamed.txt
+silver.txt
+silver_copy.txt
+lemon_renamed.txt
+silver.txt
