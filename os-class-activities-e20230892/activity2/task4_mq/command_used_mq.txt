@@ -1,0 +1,20 @@
+
+    if (mq_unlink(QUEUE_NAME) == -1) {
+        perror("mq_unlink");
+        exit(EXIT_FAILURE);
+    }
+    printf("Receiver: queue unlinked.\n");
+
+    return 0;
+}
+EOF
+
+ 1238  # 1. Compile both programs
+ 1239  gcc -o sender sender.c -lrt
+ 1240  gcc -o receiver receiver.c -lrt
+ 1241  # 2. Run sender
+ 1242  ./sender
+ 1243  # 3. Run receiver and save output to result-mq-ipc.txt
+ 1244  ./receiver | tee result-mq-ipc.txt
+ 1245  # 4. Save your executed commands
+ 1246  history | tail -n 20 > command_used_mq.txt

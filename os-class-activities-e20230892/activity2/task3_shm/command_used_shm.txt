@@ -1,0 +1,20 @@
+
+    if (shm_unlink(name) == -1) {
+        perror("shm_unlink");
+        exit(EXIT_FAILURE);
+    }
+    printf("Consumer: shared memory unlinked.\n");
+
+    return 0;
+}
+EOF
+
+ 1243  # 1. Compile both files
+ 1244  gcc -o shm-producer shm-producer.c -lrt
+ 1245  gcc -o shm-consumer shm-consumer.c -lrt
+ 1246  # 2. Run producer
+ 1247  ./shm-producer
+ 1248  # 3. Run consumer and save output to result-shm-ipc.txt
+ 1249  ./shm-consumer | tee result-shm-ipc.txt
+ 1250  # 4. Save your executed commands to command_used_shm.txt
+ 1251  history | tail -n 20 > command_used_shm.txt
