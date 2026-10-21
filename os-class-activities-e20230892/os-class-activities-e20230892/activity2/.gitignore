@@ -1,0 +1,7 @@
+forkchild
+shm-producer
+shm-consumer
+sender
+receiver
+*.exe
+*.o
