@@ -1,0 +1,14 @@
+cd incoming && mv -- "vendor list.txt" ../reports/ && cd ..
+mv -- /home/gic-piseth-panhavorn/oslab-work/lab2/incoming/"sales north.txt" /home/gic-piseth-panhavorn/oslab-work/lab2/reports/
+cp -- "reports/vendor list.txt" "reports/sales north.txt" "TechCorp/Sales/"
+cp -- "reports/vendor list.txt" "TechCorp/Sales/archive/first-original.txt"
+cd "TechCorp/HR"
+cat "../../TechCorp/Sales/vendor list.txt"
+cat /home/gic-piseth-panhavorn/oslab-work/lab2/TechCorp/Sales/"vendor list.txt"
+cd ../..
+
+Decision:
+I used relative paths for step 3 because they remain functional if the entire lab directory tree is relocated. Absolute paths are preferred when running automated system scripts or cron tasks where the working directory is not fixed.
+
+Error: cat: 'reports/vendor list.txt': No such file or directory
+Fix: ../../reports/vendor list.txt
