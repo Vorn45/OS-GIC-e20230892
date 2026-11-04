@@ -1,0 +1,20 @@
+        buffer[bytes_read] = '\0';
+        printf("Client: received from server: \"%s\"\n", buffer);
+    }
+
+    close(sock_fd);
+    printf("Client: connection closed.\n");
+
+    return 0;
+}
+EOF
+
+ 1569  gcc -o server server.c
+ 1570  gcc -o client client.c
+ 1571  # Run automated execution to capture text output
+ 1572  ./server > result_server.txt 2>&1 &
+ 1573  sleep 1
+ 1574  ./client > result_client.txt 2>&1
+ 1575  wait
+ 1576  cat result_server.txt result_client.txt > result_socket.txt
+ 1577  history | tail -n 20 > command_used_socket.txt

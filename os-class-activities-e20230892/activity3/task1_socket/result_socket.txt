@@ -1,0 +1,15 @@
+bind: Address already in use
+Server: socket created (fd=3)
+Client: socket created
+Client: connecting to server on port 8080...
+Client: connected!
+Client: sent message: "Hello from client!"
+Client: received from server: "HTTP/1.1 400 Bad Request
+date: Wed, 04 Nov 2026 02:11:26 GMT
+server: uvicorn
+content-type: text/plain; charset=utf-8
+content-length: 30
+connection: close
+
+Invalid HTTP request received."
+Client: connection closed.
