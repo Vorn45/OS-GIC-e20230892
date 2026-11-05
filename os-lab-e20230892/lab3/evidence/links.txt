@@ -1,0 +1,10 @@
+18743759 -rw-rw-r-- 2 gic-piseth-panhavorn gic-piseth-panhavorn 10 Nov  5 08:05 hard.txt
+18743767 lrwxrwxrwx 1 gic-piseth-panhavorn gic-piseth-panhavorn 10 Nov  5 08:05 soft.txt -> source.txt
+18743759 -rw-rw-r-- 2 gic-piseth-panhavorn gic-piseth-panhavorn 10 Nov  5 08:05 source.txt
+cat: soft.txt: No such file or directory
+18743759 -rw-rw-r-- 2 gic-piseth-panhavorn gic-piseth-panhavorn 10 Nov  5 08:05 hard.txt
+18743759 -rw-rw-r-- 2 gic-piseth-panhavorn gic-piseth-panhavorn 10 Nov  5 08:05 renamed.txt
+18743767 lrwxrwxrwx 1 gic-piseth-panhavorn gic-piseth-panhavorn 11 Nov  5 08:05 soft.txt -> renamed.txt
+renamed.txt
+version 1
+version 1
