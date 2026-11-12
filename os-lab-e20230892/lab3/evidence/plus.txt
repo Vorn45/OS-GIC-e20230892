@@ -1,0 +1,1 @@
+Guessed only river2.txt would match, but river[!1]* also matched river.log because the period character is not 1.

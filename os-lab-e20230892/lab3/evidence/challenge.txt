@@ -1,0 +1,2 @@
+1. The link count starts at 3, decreases to 2 after deleting one.txt, and drops to 1 after deleting another name.
+2. The data is not gone after deleting one.txt; two.txt and three.txt still point to the same inode. The data blocks are only deallocated and freed when the link count reaches 0 and no open file descriptor references the file.

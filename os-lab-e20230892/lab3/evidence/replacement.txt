@@ -1,4 +1,9 @@
-18743759 -rw-rw-r-- 2 gic-piseth-panhavorn gic-piseth-panhavorn 10 Nov  5 08:05 hard.txt
-18743769 -rw-rw-r-- 1 gic-piseth-panhavorn gic-piseth-panhavorn 10 Nov  5 08:05 source.txt
-version 2
-version 1
+
+=== NEW FILE USING THE OLD NAME ===
+18752054 -rw-rw-r-- 2 gic-piseth-panhavorn gic-piseth-panhavorn 12 Nov  6 07:52 river-hard.txt
+18752054 -rw-rw-r-- 2 gic-piseth-panhavorn gic-piseth-panhavorn 12 Nov  6 07:52 river-old.txt
+18752055 lrwxrwxrwx 1 gic-piseth-panhavorn gic-piseth-panhavorn  9 Nov  6 07:52 river-soft.txt -> river.txt
+18752057 -rw-rw-r-- 1 gic-piseth-panhavorn gic-piseth-panhavorn 12 Nov  6 07:52 river.txt
+river.txt: version 158
+hard: version 108
+soft: version 158

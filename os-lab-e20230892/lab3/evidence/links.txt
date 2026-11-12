@@ -1,10 +1,25 @@
-18743759 -rw-rw-r-- 2 gic-piseth-panhavorn gic-piseth-panhavorn 10 Nov  5 08:05 hard.txt
-18743767 lrwxrwxrwx 1 gic-piseth-panhavorn gic-piseth-panhavorn 10 Nov  5 08:05 soft.txt -> source.txt
-18743759 -rw-rw-r-- 2 gic-piseth-panhavorn gic-piseth-panhavorn 10 Nov  5 08:05 source.txt
-cat: soft.txt: No such file or directory
-18743759 -rw-rw-r-- 2 gic-piseth-panhavorn gic-piseth-panhavorn 10 Nov  5 08:05 hard.txt
-18743759 -rw-rw-r-- 2 gic-piseth-panhavorn gic-piseth-panhavorn 10 Nov  5 08:05 renamed.txt
-18743767 lrwxrwxrwx 1 gic-piseth-panhavorn gic-piseth-panhavorn 11 Nov  5 08:05 soft.txt -> renamed.txt
-renamed.txt
-version 1
-version 1
+
+=== BEFORE RENAME ===
+18752054 -rw-rw-r-- 2 gic-piseth-panhavorn gic-piseth-panhavorn 12 Nov  6 07:52 river-hard.txt
+18752055 lrwxrwxrwx 1 gic-piseth-panhavorn gic-piseth-panhavorn  9 Nov  6 07:52 river-soft.txt -> river.txt
+18752054 -rw-rw-r-- 2 gic-piseth-panhavorn gic-piseth-panhavorn 12 Nov  6 07:52 river.txt
+hard: version 108
+soft: version 108
+stored target: river.txt
+
+=== AFTER RENAME, BEFORE REPAIR ===
+18752054 -rw-rw-r-- 2 gic-piseth-panhavorn gic-piseth-panhavorn 12 Nov  6 07:52 river-hard.txt
+18752054 -rw-rw-r-- 2 gic-piseth-panhavorn gic-piseth-panhavorn 12 Nov  6 07:52 river-old.txt
+18752055 lrwxrwxrwx 1 gic-piseth-panhavorn gic-piseth-panhavorn  9 Nov  6 07:52 river-soft.txt -> river.txt
+hard: version 108
+stored target: river.txt
+soft: cat: river-soft.txt: No such file or directory
+
+=== AFTER REPAIR ===
+18752054 -rw-rw-r-- 2 gic-piseth-panhavorn gic-piseth-panhavorn 12 Nov  6 07:52 river-hard.txt
+18752054 -rw-rw-r-- 2 gic-piseth-panhavorn gic-piseth-panhavorn 12 Nov  6 07:52 river-old.txt
+18752055 lrwxrwxrwx 1 gic-piseth-panhavorn gic-piseth-panhavorn 13 Nov  6 07:53 river-soft.txt -> river-old.txt
+stored target: river-old.txt
+hard: version 108
+soft: version 108
+Decision: A relative target was used so the symlink remains valid if the workspace or parent directory is moved; an absolute path would break upon changing directories.

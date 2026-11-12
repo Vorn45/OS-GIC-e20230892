@@ -1,0 +1,9 @@
+=== CHECKPOINT CHAIN ===
+18743603 lrwxrwxrwx 1 gic-piseth-panhavorn gic-piseth-panhavorn 15 Nov 12 07:41 links/first.txt -> ocean-final.txt
+18743602 -rw-rw-r-- 2 gic-piseth-panhavorn gic-piseth-panhavorn 23 Nov 12 07:41 links/hard.txt
+18743602 -rw-rw-r-- 2 gic-piseth-panhavorn gic-piseth-panhavorn 23 Nov 12 07:41 links/ocean-final.txt
+18743604 lrwxrwxrwx 1 gic-piseth-panhavorn gic-piseth-panhavorn  9 Nov 12 07:41 links/second.txt -> first.txt
+hard: checkpoint river ocean
+first target: ocean-final.txt
+second target: first.txt
+read second: checkpoint river ocean

@@ -1,0 +1,6 @@
+<notes/river12.txt>
+<notes/river1.txt>
+<notes/river2.txt>
+<notes/river1.txt>
+<notes/river2.txt>
+<notes/*.txt>
