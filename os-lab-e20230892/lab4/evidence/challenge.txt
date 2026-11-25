@@ -1,0 +1,8 @@
+status,count
+ready,8
+sent,9
+ready,8
+sent,6
+ready,8
+ready-late,60
+cat: data/missing.csv: No such file or directory
